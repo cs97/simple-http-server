@@ -37,7 +37,7 @@ fn handle_connection(mut stream: TcpStream) {
 fn handle_request(http_request: &Vec<String>, mut stream: TcpStream) {
 
     // Example authentication. Please use a secure authentication method
-    //let pass = "cmF4OmxvbGln";
+    //let pass = "dXNlcjpwYXNz";
     let pass = "none";
     if &extract_var("Authorization", 2, &http_request) == pass {
 
