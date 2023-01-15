@@ -109,19 +109,3 @@ fn handle_put(path: &str, content_length: &str, mut stream: TcpStream) {
     stream.write_all(status_line.as_bytes()).unwrap();
 }
 
-
-
-/*
-curl http://192.168.178.53:7878/
-curl -u rax:lolig -T gentoo.png http://127.0.0.1:7878/
-curl -u rax:lolig http://127.0.0.1:7878/
-
-
-*/
-
-
-
-
-
-
-
